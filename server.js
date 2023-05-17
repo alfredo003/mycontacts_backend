@@ -4,8 +4,7 @@ const app =express();
 
 const port = process.env.PORT || 5000
 
-app.get("/api/contacts",(req,res)=>{
-  res.json({message:'hello express'})
-})
+app.use("/api/contacts",require('./routes/contactRoute'));
+
 
 app.listen(port,()=>{console.log(`SERVER RUNNING IN PORT: ${port}`)})
