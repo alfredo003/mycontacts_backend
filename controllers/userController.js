@@ -82,7 +82,7 @@ const registerUser = asyncHandler(async (req,res)=>{
  * @access private 
  */
  const currentUser = asyncHandler(async (req,res)=>{
-  res.json({message:"Current user"});
+  res.json(req.user); 
 })
 
 
