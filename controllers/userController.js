@@ -5,7 +5,7 @@ const User = require('./../models/userModel');
 /**
  * @desc Register a user
  * @route POST /api/users/register
- * @access public 
+ * @access private 
  */  
 const registerUser = asyncHandler(async (req,res)=>{
   const  { username,email,password} = req.body;
@@ -45,7 +45,7 @@ const registerUser = asyncHandler(async (req,res)=>{
 /**
  * @desc login a user
  * @route POST /api/users/login
- * @access public 
+ * @access private 
  */
  const loginUser = asyncHandler(async (req,res)=>{
   const {email,password} = req.body;
@@ -65,7 +65,7 @@ const registerUser = asyncHandler(async (req,res)=>{
         id:user.id,
       },
    }, process.env.ACCESS_TOKEN_SECRET,
-   {expiresIn:"1m"}
+   {expiresIn:"15m"}
    );
 
     res.status(200).json({accessToken});
