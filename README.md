@@ -5,8 +5,7 @@ I built this api simply for teaching purposes, it was a very fun experience, lea
 
 
 ## About the Project:
-
-is uma agenda contacto onde o usuário se regista e   faz o login para registar os seus contactos.
+is a contact agenda where the user registers and logs in to register his contacts.
 
 ## used tools:
 
