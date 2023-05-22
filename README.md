@@ -18,6 +18,7 @@ is uma agenda contacto onde o usuário se regista e   faz o login para registar 
 
 
 ## Project Files:
+<img src="https://github.com/alfredo003/mycontacts_backend/blob/main/files.png"/>
 
 Config:Configuration directory where we attach all the config files of the example project to connect with the database.
 
@@ -43,6 +44,6 @@ routes: directory where we attach the project routes where we organize our EndPo
     • contactRoute.js
     • userRoute.js
 # Bibliographic Reference:
-<a href="https://jwt.io/introduction">https://jwt.io/introduction</a>
-<a href="https://www.mongodb.com/">https://www.mongodb.com/</a>
-<a href="https://expressjs.com/">https://expressjs.com/</a>
+<a href="https://jwt.io/introduction">https://jwt.io/introduction</a><br>
+<a href="https://www.mongodb.com/">https://www.mongodb.com/</a><br>
+<a href="https://expressjs.com/">https://expressjs.com/</a><br>
