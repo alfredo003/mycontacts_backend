@@ -1,48 +1,52 @@
-# BUILDING A REST API WITH NODE.JS,EXRESS,MONGODB ,JWT
+# Building a REST API with Node.js, Express, MongoDB, and JWT
 
-I built this api simply for teaching purposes, it was a very fun experience, learning more about non-relational databases (MongoDB) and user authentication (JWT).
+This project is a contact agenda where users can register and log in to manage their contacts. It was developed for teaching purposes, providing an opportunity to learn about non-relational databases (MongoDB) and user authentication (JWT).
 
+## About the Project
+The project aims to create a RESTful API using Node.js, Express, MongoDB, and JWT. It allows users to register and authenticate, enabling them to manage their contacts effectively.
 
+## Used Tools
+The following tools were used in the development of this project:
 
-## About the Project:
-is a contact agenda where the user registers and logs in to register his contacts.
+- **Express**: A minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
 
-## used tools:
+- **MongoDB**: An open-source, non-relational database management system (DBMS) that uses flexible documents instead of tables and rows to process and store various forms of data.
 
-    • Express : is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
-      
-    • MongoDB:is an open source, nonrelational database management system (DBMS) that uses flexible documents instead of tables and rows to process and store various forms of data. 
-      
-    • JWT:JSON Web Token (JWT) is an open standard (RFC 7519) that defines a compact and self-contained way for securely transmitting information between parties as a JSON object. This information can be verified and trusted because it is digitally signed.
+- **JWT**: JSON Web Token (JWT) is an open standard (RFC 7519) that defines a compact and self-contained way for securely transmitting information between parties as a JSON object. This information can be verified and trusted because it is digitally signed.
 
+## Project Files
+The project repository contains the following files:
 
-## Project Files:
-<img src="https://github.com/alfredo003/mycontacts_backend/blob/main/files.png"/>
+### Config:
+This directory contains the configuration files necessary for the example project to connect with the database.
 
-Config:Configuration directory where we attach all the config files of the example project to connect with the database.
+- **dbConnection.js**: Configuration file for establishing the database connection.
 
-    • dbConnection.js
-      
-Controllers: 
-directory of the control layer where we attach our class controllers, that is, the layers that make the intersection between the modal layer and our views
+### Controllers:
+This directory contains the control layer files, which handle the logic between the model layer and the views.
 
-    • contactController.js
-    • userController.js
-      
-middleware:
-    • errorHandler.js
-    • validateTokenHandler.js
-      
-models: model layer directory that receives data from the control layer and interacts with the database.
+- **contactController.js**: Controller responsible for managing contacts.
+- **userController.js**: Controller responsible for managing users.
 
-    • contactModel.js
-    • userModel.js
+### Middleware:
+This directory contains the middleware files, which provide additional functionality to the API.
 
-routes: directory where we attach the project routes where we organize our EndPoints
+- **errorHandler.js**: Middleware for handling errors in the API.
+- **validateTokenHandler.js**: Middleware for validating JWT tokens.
 
-    • contactRoute.js
-    • userRoute.js
+### Models:
+This directory contains the model layer files, which interact with the database.
+
+- **contactModel.js**: Model file for managing contacts.
+- **userModel.js**: Model file for managing users.
+
+### Routes:
+This directory contains the route files, where the project endpoints are organized.
+
+- **contactRoute.js**: File for defining contact-related endpoints.
+- **userRoute.js**: File for defining user-related endpoints.
+
 # Bibliographic Reference:
-<a href="https://jwt.io/introduction">https://jwt.io/introduction</a><br>
-<a href="https://www.mongodb.com/">https://www.mongodb.com/</a><br>
-<a href="https://expressjs.com/">https://expressjs.com/</a><br>
+- [JWT Introduction](https://jwt.io/introduction)
+- [MongoDB](https://www.mongodb.com/)
+- [Express.js](https://expressjs.com/)
